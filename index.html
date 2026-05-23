@@ -3,43 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Protofolio | Muh Rifai</title>
-    <!-- link Boostrap -->
+    <title>My Portfolio | Muh Rifai</title>
+    <!-- link Bootstrap 5.3 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <!-- Boostrap Icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- link AOS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!--link CSS  -->
- <link rel="stylesheet" href="style.css">
-<!-- link Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Noto+Serif+KR&family=Quicksand:wght@300..700&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Link Google Font: Plus Jakarta Sans (Sangat Populer & Modern) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
-  <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm ">
-      <div class="container " >
-        <a class="navbar-brand" href="#">MuhRifai.Dev</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  <body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0b111e; color: #f3f4f6; overflow-x: hidden;">
+    
+    <!-- Navbar (Gaya Transparan Glassmorphism) -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: rgba(11, 17, 30, 0.75); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#" style="background: linear-gradient(45deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">MuhRifai.Dev</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#profil">Profil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="#profil">Profil</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="#project">Project</a></li>
+            <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -47,204 +39,222 @@
     <!-- Navbar end -->
 
 
-    <!-- Home -->
-</section >
-<section id="home" class=" pt-5" >
-  <div class="container">
-    <div class="row align-items-center  gy-5 py-5  text-center">
-      <div class="col-12 col-sm-12 col-md-6  col-lg-6">
-        <img src="img/home.jpg" class="shadow-lg d-block mx-auto mx-sm-auto  mx-md-auto   img-fluid img-thumbnail rounded-circle" alt="Bootstrap Themes"  loading="lazy " data-aos="flip-right" data-aos-duration="2500"/>
+    <!-- Home Section -->
+    <section id="home" class="min-vh-100 d-flex align-items-center" style="background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.15), transparent 50%), radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.1), transparent 50%);">
+      <div class="container py-5">
+        <div class="row align-items-center gy-5 text-center text-md-start">
+          <div class="col-12 col-md-6 order-md-2">
+            <div class="position-relative mx-auto" style="max-width: 380px;">
+              <!-- Efek Cahaya Belakang (Glow) -->
+              <div class="position-absolute top-50 start-50 translate-middle rounded-circle" style="width: 100%; height: 100%; background: linear-gradient(45deg, #3b82f6, #8b5cf6); filter: blur(40px); opacity: 0.3; z-index: -1;"></div>
+              <img src="img/home.jpg" class="img-fluid rounded-4 shadow-lg" alt="Muh Rifai" loading="lazy" data-aos="zoom-in" data-aos-duration="1500" style="border: 2px solid rgba(255, 255, 255, 0.1); object-fit: cover; aspect-ratio: 1/1;"/>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 order-md-1">
+            <h1 class="display-3 fw-extrabold lh-sm mb-3">Hi, I'm <br><span style="background: linear-gradient(45deg, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Muh. Rifai</span></h1>
+            <p class="lead myheadline fs-4 opacity-75 mb-4">Mahasiswa | Fullstack Web Developer</p>
+            <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+              <a href="#project" class="btn btn-primary px-4 py-2 rounded-pill fw-medium shadow-sm" style="background: linear-gradient(45deg, #3b82f6, #8b5cf6); border: none;">Lihat Project</a>
+              <a href="#contact" class="btn btn-outline-light px-4 py-2 rounded-pill fw-medium border-secondary">Hubungi Saya</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
-        <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3 text-sm-center text-lg-start"  >I'am <span class="link-danger">Muh. Rifai</span></h1>
-        <p class="lead myheadline text-sm-center text-lg-start">Mahasiswa | Fullstack Web Developer</p>
-      </div>
-    </div>
-  </div>
-</section>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFBF00" fill-opacity="1" d="M0,192L48,170.7C96,149,192,107,288,122.7C384,139,480,213,576,202.7C672,192,768,96,864,85.3C960,75,1056,149,1152,181.3C1248,213,1344,203,1392,197.3L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z" class="svg1"></path> </svg>
+    </section>
     <!-- Home end -->
 
 
-    <!-- Profil -->
-    <section id="profil">
-        <div class="container py-5 ">
-          <div class="row flex-row-reverse  align-items-center gy-5 py-5 justify-content-evenly  text-center">
-            <div class="col-10 col-sm-10 col-md-12  col-lg-4">
-              <img src="img/profil.jpg" class="shadow-lg d-block mx-auto mx-sm-auto  mx-md-auto  mx-lg-auto img-fluid img-thumbnail rounded-circle" alt="Bootstrap Themes"  loading="lazy " data-aos="flip-right" data-aos-duration="2500" />
-            </div>
-            <div class="col-10 col-sm-10 col-md-12 col-lg-6 ">
-              <h1 class="display-5 fw-bold text-body-emphasis lh-1 pb-3 mb-3 border-bottom" data-aos="fade-right" data-aos-duration="1000">Profil</h1>
-              <p class="lead myprofil" data-aos="zoom-in" data-aos-duration="1000">Saya Muh Rifai Mahasiswa Universitas Cokroaminoto Palopo Program studi Informatika semester 6. Sebagai mahasiswa yang berasal dari keluarga kurang mampu, perjalanan hidup saya penuh dengan tantangan yang memperkuat tekad dan semangat saya untuk meraih impian. Dalam keseharian saya, saya belajar untuk mengatasi keterbatasan finansial dengan kreativitas dan ketekunan.</p>
+    <!-- Profil Section -->
+    <section id="profil" class="py-5" style="background-color: #0f172a;">
+      <div class="container py-5">
+        <div class="row align-items-center gy-5 justify-content-between text-center text-lg-start">
+          <div class="col-12 col-lg-5">
+            <div class="position-relative mx-auto" style="max-width: 340px;">
+              <div class="position-absolute top-50 start-50 translate-middle rounded-circle" style="width: 100%; height: 100%; background: #06b6d4; filter: blur(50px); opacity: 0.2; z-index: -1;"></div>
+              <img src="img/profil.jpg" class="img-fluid rounded-4 shadow-lg" alt="Profil Muh Rifai" loading="lazy" data-aos="fade-right" data-aos-duration="1500" style="border: 1px solid rgba(255, 255, 255, 0.1); object-fit: cover; aspect-ratio: 1/1;" />
             </div>
           </div>
+          <div class="col-12 col-lg-6">
+            <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3">
+              <div style="width: 30px; height: 2px; background-color: #3b82f6;"></div>
+              <span class="text-uppercase fw-bold tracking-wider fs-6" style="color: #3b82f6;">Tentang Saya</span>
+            </div>
+            <h2 class="display-5 fw-bold text-white mb-4" data-aos="fade-up" data-aos-duration="1000">Profil</h2>
+            <p class="lead text-secondary fs-6 lh-lg" data-aos="fade-up" data-aos-duration="1200" style="text-align: justify;">
+              Saya Muh Rifai, Mahasiswa Universitas Cokroaminoto Palopo Program Studi Informatika semester 6. Sebagai mahasiswa, perjalanan hidup saya penuh dengan tantangan yang justru memperkuat tekad dan semangat saya untuk meraih impian di dunia teknologi. Dalam keseharian, saya selalu tertantang untuk mengatasi keterbatasan dengan kreativitas, ketekunan, dan terus mengasah skill software development.
+            </p>
+          </div>
         </div>
-        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC000" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,192C320,203,400,181,480,144C560,107,640,53,720,48C800,43,880,85,960,112C1040,139,1120,149,1200,128C1280,107,1360,53,1400,26.7L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z" ></path></svg>
-      </section>
+      </div>
+    </section>
     <!-- Profil end -->
 
 
-    <!-- Project -->
-    <section id="project" >
-        <div class="container pb-5 pt-5">
-          <div class="row ">
-            <div class="col">
-              <h1 class="display-5 fw-bold text-body-emphasis lh-1 pb-3 mb-5  text-center" data-aos="zoom-in" data-aos-duration="1000">My Project</h1>
-            </div>
+    <!-- Project Section -->
+    <section id="project" class="py-5" style="background: radial-gradient(circle at bottom right, rgba(6, 182, 212, 0.1), transparent 50%);">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold text-white mb-2" data-aos="zoom-in" data-aos-duration="1000">My Project</h2>
+          <p class="text-secondary">Beberapa aplikasi dan sistem yang telah saya bangun</p>
         </div>
-            <div class="row">
-                <div class="col mycard col-12 col-sm-12 col-md-6 col-lg-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
-                    <div class="card mx-auto  " style="width: 18rem;">
-                        <img src="img/prj1.png" class="card-img-top" alt="Project1">
-                        <div class="card-body">
-                          <h5 class="card-title">Login page</h5>
-                          <p class="card-text">Pembuatan Login page ini menggunakan HTML dan CSS.</p>
-                        </div><br>
-                      </div>
-                </div>
-                <div class="col mycard col-12 col-sm-12 col-md-6 col-lg-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
-                    <div class="card  mx-auto " style="width: 18rem;" >
-                        <img src="img/prj2.png" class="card-img-top" alt="Project2">
-                        <div class="card-body">
-                          <h5 class="card-title">Fanbook</h5>
-                          <p class="card-text">Pembuatan fanbook ini menggunakan HTML, CSS, dan Framework Boostrap.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col mycard col-12 col-sm-12 col-md-6 col-lg-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
-                    <div class="card mx-auto " style="width: 18rem;">
-                        <img src="img/prj3.png" class="card-img-top" alt="Project3">
-                        <div class="card-body">
-                          <h5 class="card-title">Portofolio</h5>
-                          <p class="card-text">Pembuatan portofolio ini menggunakan HTML, CSS, JS dan Framework Boostrap.</p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col mycard col-12 col-sm-12 col-md-6 col-lg-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
-                    <div class="card mx-auto " style="width: 18rem;" >
-                        <img src="img/prj4.png" class="card-img-top" alt="Project4">
-                        <div class="card-body">
-                          <h5 class="card-title">Aplikasi Administrasi</h5>
-                          <p class="card-text">Pembuatan aplikasi ini menggunakan bahasa pemrograman Java </p>
-                        </div>
-                      </div>
-                </div>
-                <div class="col mycard col-12 col-sm-12 col-md-6 col-lg-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
-                    <div class="card mx-auto " style="width: 18rem;">
-                        <img src="img/pjr5.png" class="card-img-top" alt="Project5">
-                        <div class="card-body">
-                          <h5 class="card-title">Aplikasi Penggajian</h5>
-                          <p class="card-text">Pembuatan aplikasi ini menggunakan bahasa pemrograman Visual Basic</p>
-                        </div>
-                      </div>
+        
+        <div class="row g-4 justify-content-center">
+            <!-- Project 1 -->
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card h-100 border-0 rounded-4 shadow" style="background: #1e293b; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;">
+                    <img src="img/prj1.png" class="card-img-top" alt="Login page" style="height: 200px; object-fit: cover; opacity: 0.9;">
+                    <div class="card-body p-4">
+                      <span class="badge mb-2 px-3 py-2 rounded-pill" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;">Web Design</span>
+                      <h5 class="card-title fw-bold text-white">Login page</h5>
+                      <p class="card-text text-secondary small">Pembuatan Login page interaktif dan responsif menggunakan HTML purba dan CSS modern.</p>
+                    </div>
                 </div>
             </div>
+            <!-- Project 2 -->
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1200">
+                <div class="card h-100 border-0 rounded-4 shadow" style="background: #1e293b; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;">
+                    <img src="img/prj2.png" class="card-img-top" alt="Fanbook" style="height: 200px; object-fit: cover; opacity: 0.9;">
+                    <div class="card-body p-4">
+                      <span class="badge mb-2 px-3 py-2 rounded-pill" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6;">Bootstrap</span>
+                      <h5 class="card-title fw-bold text-white">Fanbook Platform</h5>
+                      <p class="card-text text-secondary small">Pembuatan fanbook berbasis web menggunakan kombinasi HTML, CSS, dan framework Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1400">
+                <div class="card h-100 border-0 rounded-4 shadow" style="background: #1e293b; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;">
+                    <img src="img/prj3.png" class="card-img-top" alt="Portofolio" style="height: 200px; object-fit: cover; opacity: 0.9;">
+                    <div class="card-body p-4">
+                      <span class="badge mb-2 px-3 py-2 rounded-pill" style="background: rgba(6, 182, 212, 0.1); color: #06b6d4;">Fullstack</span>
+                      <h5 class="card-title fw-bold text-white">Personal Portfolio</h5>
+                      <p class="card-text text-secondary small">Website portofolio interaktif dengan animasi GSAP, AOS, dan form handler eksternal.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1600">
+                <div class="card h-100 border-0 rounded-4 shadow" style="background: #1e293b; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;">
+                    <img src="img/prj4.png" class="card-img-top" alt="Aplikasi Administrasi" style="height: 200px; object-fit: cover; opacity: 0.9;">
+                    <div class="card-body p-4">
+                      <span class="badge mb-2 px-3 py-2 rounded-pill" style="background: rgba(234, 179, 8, 0.1); color: #eab308;">Java Desktop</span>
+                      <h5 class="card-title fw-bold text-white">Aplikasi Administrasi</h5>
+                      <p class="card-text text-secondary small">Sistem manajemen administrasi data berbasis desktop menggunakan bahasa pemrograman Java.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1800">
+                <div class="card h-100 border-0 rounded-4 shadow" style="background: #1e293b; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;">
+                    <img src="img/pjr5.png" class="card-img-top" alt="Aplikasi Penggajian" style="height: 200px; object-fit: cover; opacity: 0.9;">
+                    <div class="card-body p-4">
+                      <span class="badge mb-2 px-3 py-2 rounded-pill" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">Visual Basic</span>
+                      <h5 class="card-title fw-bold text-white">Aplikasi Penggajian</h5>
+                      <p class="card-text text-secondary small">Aplikasi penghitungan gaji karyawan otomatis terintegrasi menggunakan Visual Basic.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFC000" fill-opacity="1" d="M0,64L48,85.3C96,107,192,149,288,186.7C384,224,480,256,576,224C672,192,768,96,864,69.3C960,43,1056,85,1152,101.3C1248,117,1344,107,1392,101.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+      </div>
+    </section>
     <!-- Project end -->
 
 
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container pt-5">
-            <div class="row ">
-                <div class="col">
-                  <h1 class="display-5 fw-bold text-body-emphasis lh-1 pb-3 mt-4 mb-3 mb-sm-5 mb-md-5 mb-lg-5  text-center" data-aos="zoom-in" data-aos-duration="2000">Contact Me</h1>
-                </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5" style="background-color: #0f172a;">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+              <h2 class="display-5 fw-bold text-white mb-2" data-aos="zoom-in" data-aos-duration="1000">Contact Me</h2>
+              <p class="text-secondary">Punya ide proyek menarik? Yuk, bicarakan!</p>
             </div>
-            <div class="mypost" data-aos="fade-up" data-aos-duration="1000">
-          <div class="row  justify-content-center">
-            <div class="col-11 col-sm-10 col-md-10  col-lg-10 " >
-              <div class="myalert alert alert-success alert-dismissible fade show d-none" role="alert">
-                <i class="bi bi-check-circle-fill"></i><strong class="ms-3">Terima Kasih!</strong> Pesan Telah Terkirim.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-                <form class=" row " name="contact-form">
-                    <div class="mb-3">
-                      <label for="name" class="form-label">Nama Lengkap</label>
-                      <input  type="name" class="form-control" id="name" aria-describedby="name" placeholder="Masukan Nama Lengkap" name="nama"/>
+            
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
+              <div class="col-12 col-md-8 col-lg-6">
+                <div class="p-4 p-sm-5 rounded-4 shadow" style="background: #1e293b; border: 1px solid rgba(255, 255, 255, 0.05);">
+                  <div class="myalert alert alert-success alert-dismissible fade show d-none border-0" role="alert" style="background-color: rgba(34, 197, 94, 0.2); color: #4ade80;">
+                    <i class="bi bi-check-circle-fill me-2"></i><strong>Terima Kasih!</strong> Pesan Anda berhasil dikirim.
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  
+                  <form name="contact-form">
+                    <div class="mb-4">
+                      <label for="name" class="form-label text-secondary small fw-semibold">Nama Lengkap</label>
+                      <input type="text" class="form-control px-3 py-2 bg-dark border-0 text-white rounded-3 focus-ring" id="name" placeholder="Masukkan nama lengkap Anda" name="nama" required style="--bs-focus-ring-color: rgba(59, 130, 246, 0.5);"/>
                     </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Masukan Email" name="email"/>
-                      </div>
-                      <div class="mb-3">
-                        <label  for="pesan" class="form-label">Pesan</label>
-                        <textarea class="form-control" id="pesan" rows="3" placeholder="Masukan Pesan" name="pesan"></textarea>
-                      </div>
-                    <button type="submit" class="btn btn-dark  btn-kirim">Kirim</button>
-                    <button class="btn btn-dark btn-load d-none" type="button" disabled>
-                      <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-                      <span role="status" >Loading...</span>
+                    <div class="mb-4">
+                      <label for="email" class="form-label text-secondary small fw-semibold">Email</label>
+                      <input type="email" class="form-control px-3 py-2 bg-dark border-0 text-white rounded-3 focus-ring" id="email" placeholder="nama@email.com" name="email" required style="--bs-focus-ring-color: rgba(59, 130, 246, 0.5);"/>
+                    </div>
+                    <div class="mb-4">
+                      <label for="pesan" class="form-label text-secondary small fw-semibold">Pesan Anda</label>
+                      <textarea class="form-control px-3 py-2 bg-dark border-0 text-white rounded-3 focus-ring" id="pesan" rows="4" placeholder="Tuliskan pesan Anda di sini..." name="pesan" required style="--bs-focus-ring-color: rgba(59, 130, 246, 0.5);"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 py-2.5 rounded-3 fw-bold btn-kirim" style="background: linear-gradient(45deg, #3b82f6, #8b5cf6); border: none;">Kirim Pesan</button>
+                    
+                    <button class="btn btn-primary w-100 py-2.5 rounded-3 fw-bold btn-load d-none" type="button" disabled style="background: linear-gradient(45deg, #3b82f6, #8b5cf6); border: none;">
+                      <span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>Loading...
                     </button>
                   </form>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
-        </div>
-      </section>
+    </section>
     <!-- Contact end -->
 
 
     <!-- Footer -->
-    <section >
-        <div class="container-fluid px-0 mt-5 ">
-          <footer>
-            <ul class="nav justify-content-center border-bottom ">
-              <li class="nav-item"><a href="https://www.instagram.com/sqorpioo_?igsh=dW4yeTNxaXgxZXRt" class="nav-link px-2 text-body-secondary"><i class="bi bi-instagram "></i></a></li>
-              <li class="nav-item"><a href="https://www.linkedin.com/in/muh-rifai27-undefined-3847352b4/" class="nav-link px-2 text-body-secondary"><i class="bi bi-linkedin"></i></a></li>
-              <li class="nav-item"><a href="https://github.com/RFI21" class="nav-link px-2 text-body-secondary"><i class="bi bi-github"></i></a></li>
-            </ul>
-            <p class="text-center text-body-secondary m-0  pt-3 pb-3">&copy; 2024 Muh Rifai, Inc</p>
-          </footer>
+    <footer class="py-4" style="background-color: #0b111e; border-top: 1px solid rgba(255, 255, 255, 0.05);">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center gap-4 mb-3">
+              <a href="https://www.instagram.com/sqorpioo_?igsh=dW4yeTNxaXgxZXRt" class="text-secondary fs-4 hover-light"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/muh-rifai27-undefined-3847352b4/" class="text-secondary fs-4 hover-light"><i class="bi bi-linkedin"></i></a>
+              <a href="https://github.com/RFI21" class="text-secondary fs-4 hover-light"><i class="bi bi-github"></i></a>
+            </div>
+            <p class="text-secondary small m-0">&copy; 2024 Muh Rifai. Built with Passion & Bootstrap.</p>
         </div>
-      </section>
+    </footer>
     <!-- Footer end -->
 
-    
-    <!-- JS Boostrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <!-- JS AOS -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <!-- JS GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
-  <script>
-    gsap.registerPlugin(TextPlugin)
-    gsap.defaults({ease:" "});
-    const tl = gsap.timeline({repeat:4, repeatDelay:0.5,delay: 1.8, yoyo:true});
-    tl.from(".myheadline", {duration: 2, text:""})
-    gsap.from('.svg1', {duration : 1.5, y: -90, opacity : 1 })
-    gsap.from('.display-4', { duration: 1, x: 100, opacity: 0, delay: 0.5, ease: 'back'})
-  </script>
 
-  <!--Contact Form -->
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzS2aDpw8OUWc8VdJZOKOdZUtzBqNebNOTI4bVQlVRDAFQNjBUbSnan5UepIzAWq8uL/exec'
-    const form = document.forms['contact-form']
-    const btnKirim=document.querySelector('.btn-kirim')
-    const btnLoad=document.querySelector('.btn-load')
-    const myalert=document.querySelector('.myalert')
-   
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      btnKirim.classList.toggle('d-none')
-      btnLoad.classList.toggle('d-none')
-      
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-          btnKirim.classList.toggle('d-none')
-          btnLoad.classList.toggle('d-none')
-          myalert.classList.toggle('d-none')
-          form.reset()
-          console.log('Success!', response)
-      })
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init({ once: true });</script>
+    <!-- JS GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      const tl = gsap.timeline({repeat:-1, repeatDelay:1.5, yoyo:true});
+      tl.from(".myheadline", {duration: 2, text:""});
+      gsap.from('.display-3', { duration: 1.2, y: 50, opacity: 0, ease: 'power4.out'});
+    </script>
+
+    <!-- Contact Form Handler -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzS2aDpw8OUWc8VdJZOKOdZUtzBqNebNOTI4bVQlVRDAFQNjBUbSnan5UepIzAWq8uL/exec'
+      const form = document.forms['contact-form']
+      const btnKirim = document.querySelector('.btn-kirim')
+      const btnLoad = document.querySelector('.btn-load')
+      const myalert = document.querySelector('.myalert')
+       
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        btnKirim.classList.toggle('d-none')
+        btnLoad.classList.toggle('d-none')
+          
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            btnKirim.classList.toggle('d-none')
+            btnLoad.classList.toggle('d-none')
+            myalert.classList.toggle('d-none')
+            form.reset()
+            console.log('Success!', response)
+        })
         .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+      })
+    </script>
   </body>
 </html>
