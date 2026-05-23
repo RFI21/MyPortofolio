@@ -60,18 +60,25 @@
 </head>
 <body class="font-sans antialiased text-slate-300 bg-darker selection:bg-primary selection:text-white relative">
 
+
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-0 -left-4 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute top-0 -right-4 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+    </div>
+
     <nav class="fixed w-full z-50 glass-panel border-b border-slate-800/50 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <div class="flex-shrink-0">
                     <a href="#" class="text-2xl font-bold font-mono tracking-tighter">
-                        <span class="text-primary">&lt;</span>Jane<span class="text-secondary">/&gt;</span>
+                        <span class="text-primary">&lt;</span>Rifai.id<span class="text-secondary">/&gt;</span>
                     </a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
                         <a href="#beranda" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
-                        <a href="#tentang" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Tentang</a>
+                        <a href="#tentang" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Profil</a>
                         <a href="#karya" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Karya</a>
                         <a href="#keahlian" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Keahlian</a>
                     </div>
@@ -95,7 +102,7 @@
         <div class="md:hidden hidden bg-dark/95 border-b border-slate-800" id="mobile-menu">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a href="#beranda" class="text-slate-300 hover:text-white hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
-                <a href="#tentang" class="text-slate-300 hover:text-white hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Tentang</a>
+                <a href="#tentang" class="text-slate-300 hover:text-white hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Prosil</a>
                 <a href="#karya" class="text-slate-300 hover:text-white hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Karya</a>
                 <a href="#keahlian" class="text-slate-300 hover:text-white hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Keahlian</a>
                 <a href="#kontak" class="text-primary hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium mt-4">Hubungi Saya</a>
@@ -110,7 +117,7 @@
             <div class="max-w-4xl mx-auto text-center">
                 <p class="text-primary font-mono mb-4 text-sm md:text-base tracking-widest uppercase inline-block py-1 px-3 rounded-full border border-primary/30 bg-primary/10">Halo, saya</p>
                 <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-6 text-white">
-                    Jane Doe<br>
+                    Muh Rifai<br>
                     <span class="text-gradient">Desainer Web & Pengembang.</span>
                 </h1>
                 <p class="mt-4 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -121,18 +128,14 @@
                         Lihat Karya Saya
                         <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
                     </a>
-                    <a href="https://github.com" target="_blank" class="w-full sm:w-auto px-8 py-4 border border-slate-700 text-base font-medium rounded-full text-slate-300 hover:bg-slate-800 hover:text-white transition-all flex items-center justify-center">
+                    <a href="https://github.com/RFI21" target="_blank" class="w-full sm:w-auto px-8 py-4 border border-slate-700 text-base font-medium rounded-full text-slate-300 hover:bg-slate-800 hover:text-white transition-all flex items-center justify-center">
                         <i data-lucide="github" class="mr-2 h-5 w-5"></i>
                         GitHub
                     </a>
                 </div>
             </div>
             
-            <!-- Indikator Scroll -->
-            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center text-slate-500">
-                <span class="text-xs mb-2 uppercase tracking-widest">Gulir</span>
-                <i data-lucide="mouse" class="h-5 w-5"></i>
-            </div>
+
         </section>
 
         <section id="tentang" class="py-24 bg-dark/50 relative border-t border-slate-800/50">
