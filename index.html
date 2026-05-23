@@ -1,260 +1,434 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio | Muh Rifai</title>
-    <!-- link Bootstrap 5.3 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-    <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- link AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Link Google Font: Plus Jakarta Sans (Sangat Populer & Modern) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- link CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-  <body style="font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0b111e; color: #f3f4f6; overflow-x: hidden;">
-    
-    <!-- Navbar (Gaya Transparan Glassmorphism) -->
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: rgba(11, 17, 30, 0.75); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#" style="background: linear-gradient(45deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">MuhRifai.id</a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto gap-2">
-            <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link px-3" href="#profil">Profil</a></li>
-            <li class="nav-item"><a class="nav-link px-3" href="#project">Project</a></li>
-            <li class="nav-item"><a class="nav-link px-3" href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar end -->
-
-
-    <!-- Home Section -->
-    <section id="home" class="min-vh-100 d-flex align-items-center" style="background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.15), transparent 50%), radial-gradient(circle at bottom left, rgba(59, 130, 246, 0.1), transparent 50%);">
-      <div class="container py-5">
-        <div class="row align-items-center gy-5 text-center text-md-start">
-          <div class="col-12 col-md-6 order-md-2">
-            <div class="position-relative mx-auto" style="max-width: 380px;">
-              <!-- Efek Cahaya Belakang (Glow) -->
-              <div class="position-absolute top-50 start-50 translate-middle rounded-circle" style="width: 100%; height: 100%; background: linear-gradient(45deg, #3b82f6, #8b5cf6); filter: blur(40px); opacity: 0.3; z-index: -1;"></div>
-              <img src="img/home.jpg" class="img-fluid rounded-4 shadow-lg" alt="Muh Rifai" loading="lazy" data-aos="zoom-in" data-aos-duration="1500" style="border: 2px solid rgba(255, 255, 255, 0.1); object-fit: cover; aspect-ratio: 1/1;"/>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 order-md-1">
-            <h1 class="display-3 fw-extrabold lh-sm mb-3">Hi, I'm <br><span style="background: linear-gradient(45deg, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Muh. Rifai</span></h1>
-            <p class="lead myheadline fs-4 opacity-75 mb-4">Mahasiswa | Fullstack Web Developer</p>
-            <div class="d-flex gap-3 justify-content-center justify-content-md-start">
-              <a href="#project" class="btn btn-primary px-4 py-2 rounded-pill fw-medium shadow-sm" style="background: linear-gradient(45deg, #3b82f6, #8b5cf6); border: none;">Lihat Project</a>
-              <a href="#contact" class="btn btn-outline-light px-4 py-2 rounded-pill fw-medium border-secondary">Hubungi Saya</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Home end -->
-
-
-    <!-- Profil Section -->
-    <section id="profil" class="py-5" style="background-color: #0f172a;">
-      <div class="container py-5">
-        <div class="row align-items-center gy-5 justify-content-between text-center text-lg-start">
-          <div class="col-12 col-lg-5">
-            <div class="position-relative mx-auto" style="max-width: 340px;">
-              <div class="position-absolute top-50 start-50 translate-middle rounded-circle" style="width: 100%; height: 100%; background: #06b6d4; filter: blur(50px); opacity: 0.2; z-index: -1;"></div>
-              <img src="img/profil.jpg" class="img-fluid rounded-4 shadow-lg" alt="Profil Muh Rifai" loading="lazy" data-aos="fade-right" data-aos-duration="1500" style="border: 1px solid rgba(255, 255, 255, 0.1); object-fit: cover; aspect-ratio: 1/1;" />
-            </div>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center justify-content-center justify-content-lg-start gap-2 mb-3">
-              <div style="width: 30px; height: 2px; background-color: #3b82f6;"></div>
-              <span class="text-uppercase fw-bold tracking-wider fs-6" style="color: #3b82f6;">Tentang Saya</span>
-            </div>
-            <h2 class="display-5 fw-bold text-white mb-4" data-aos="fade-up" data-aos-duration="1000">Profil</h2>
-            <p class="lead text-secondary fs-6 lh-lg" data-aos="fade-up" data-aos-duration="1200" style="text-align: justify;">
-              Saya Muh Rifai, Mahasiswa Universitas Cokroaminoto Palopo Program Studi Informatika semester 6. Sebagai mahasiswa, perjalanan hidup saya penuh dengan tantangan yang justru memperkuat tekad dan semangat saya untuk meraih impian di dunia teknologi. Dalam keseharian, saya selalu tertantang untuk mengatasi keterbatasan dengan kreativitas, ketekunan, dan terus mengasah skill software development.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Profil end -->
-
-
-    <!-- Project Section -->
-    <section id="project" class="py-5" style="background: radial-gradient(circle at bottom right, rgba(6, 182, 212, 0.1), transparent 50%);">
-      <div class="container py-5">
-        <div class="text-center mb-5">
-          <h2 class="display-5 fw-bold text-white mb-2" data-aos="zoom-in" data-aos-duration="1000">My Project</h2>
-          <p class="text-secondary">Beberapa aplikasi dan sistem yang telah saya bangun</p>
-        </div>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Jane Doe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9', // Sky 500 - Biru Neon
+                        secondary: '#8b5cf6', // Violet 500 - Ungu Neon
+                        dark: '#0f172a', // Slate 900 - Latar Belakang Gelap
+                        darker: '#020617', // Slate 950 - Latar Belakang Sangat Gelap
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap');
         
-        <div class="row g-4 justify-content-center">
-            <!-- Project 1 -->
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
-                <div class="card h-100 border-0 rounded-4 shadow" style="background: #1e293b; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;">
-                    <img src="img/prj1.png" class="card-img-top" alt="Login page" style="height: 200px; object-fit: cover; opacity: 0.9;">
-                    <div class="card-body p-4">
-                      <span class="badge mb-2 px-3 py-2 rounded-pill" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;">Web Design</span>
-                      <h5 class="card-title fw-bold text-white">Login page</h5>
-                      <p class="card-text text-secondary small">Pembuatan Login page interaktif dan responsif menggunakan HTML purba dan CSS modern.</p>
+        body {
+            background-color: #020617; /* Slate 950 */
+            color: #f8fafc; /* Slate 50 */
+        }
+        
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .text-gradient {
+            background: linear-gradient(to right, #0ea5e9, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-sans antialiased text-slate-300 bg-darker selection:bg-primary selection:text-white relative">
+
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute top-0 -left-4 w-72 h-72 bg-primary rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+        <div class="absolute top-0 -right-4 w-72 h-72 bg-secondary rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+        <div class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <nav class="fixed w-full z-50 glass-panel border-b border-slate-800/50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold font-mono tracking-tighter">
+                        <span class="text-primary">&lt;</span>Jane<span class="text-secondary">/&gt;</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#beranda" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Beranda</a>
+                        <a href="#tentang" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Tentang</a>
+                        <a href="#karya" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Karya</a>
+                        <a href="#keahlian" class="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium">Keahlian</a>
                     </div>
                 </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1200">
-                <div class="card h-100 border-0 rounded-4 shadow" style="background: #1e293b; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;">
-                    <img src="img/prj2.png" class="card-img-top" alt="Fanbook" style="height: 200px; object-fit: cover; opacity: 0.9;">
-                    <div class="card-body p-4">
-                      <span class="badge mb-2 px-3 py-2 rounded-pill" style="background: rgba(139, 92, 246, 0.1); color: #8b5cf6;">Bootstrap</span>
-                      <h5 class="card-title fw-bold text-white">Fanbook Platform</h5>
-                      <p class="card-text text-secondary small">Pembuatan fanbook berbasis web menggunakan kombinasi HTML, CSS, dan framework Bootstrap.</p>
-                    </div>
+                <div class="hidden md:block">
+                    <a href="#kontak" class="inline-flex items-center justify-center px-6 py-2 border border-transparent text-sm font-medium rounded-full text-white bg-primary hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-darker transition-all shadow-[0_0_15px_rgba(14,165,233,0.5)]">
+                        Hubungi Saya
+                    </a>
                 </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1400">
-                <div class="card h-100 border-0 rounded-4 shadow" style="background: #1e293b; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;">
-                    <img src="img/prj3.png" class="card-img-top" alt="Portofolio" style="height: 200px; object-fit: cover; opacity: 0.9;">
-                    <div class="card-body p-4">
-                      <span class="badge mb-2 px-3 py-2 rounded-pill" style="background: rgba(6, 182, 212, 0.1); color: #06b6d4;">Fullstack</span>
-                      <h5 class="card-title fw-bold text-white">Personal Portfolio</h5>
-                      <p class="card-text text-secondary small">Website portofolio interaktif dengan animasi GSAP, AOS, dan form handler eksternal.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 4 -->
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1600">
-                <div class="card h-100 border-0 rounded-4 shadow" style="background: #1e293b; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;">
-                    <img src="img/prj4.png" class="card-img-top" alt="Aplikasi Administrasi" style="height: 200px; object-fit: cover; opacity: 0.9;">
-                    <div class="card-body p-4">
-                      <span class="badge mb-2 px-3 py-2 rounded-pill" style="background: rgba(234, 179, 8, 0.1); color: #eab308;">Java Desktop</span>
-                      <h5 class="card-title fw-bold text-white">Aplikasi Administrasi</h5>
-                      <p class="card-text text-secondary small">Sistem manajemen administrasi data berbasis desktop menggunakan bahasa pemrograman Java.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Project 5 -->
-            <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1800">
-                <div class="card h-100 border-0 rounded-4 shadow" style="background: #1e293b; transition: transform 0.3s ease, box-shadow 0.3s ease; overflow: hidden;">
-                    <img src="img/pjr5.png" class="card-img-top" alt="Aplikasi Penggajian" style="height: 200px; object-fit: cover; opacity: 0.9;">
-                    <div class="card-body p-4">
-                      <span class="badge mb-2 px-3 py-2 rounded-pill" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">Visual Basic</span>
-                      <h5 class="card-title fw-bold text-white">Aplikasi Penggajian</h5>
-                      <p class="card-text text-secondary small">Aplikasi penghitungan gaji karyawan otomatis terintegrasi menggunakan Visual Basic.</p>
-                    </div>
+                <!-- Mobile menu button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-btn">
+                        <span class="sr-only">Buka menu utama</span>
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
                 </div>
             </div>
         </div>
-      </div>
-    </section>
-    <!-- Project end -->
 
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="md:hidden hidden bg-dark/95 border-b border-slate-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#beranda" class="text-slate-300 hover:text-white hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Beranda</a>
+                <a href="#tentang" class="text-slate-300 hover:text-white hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Tentang</a>
+                <a href="#karya" class="text-slate-300 hover:text-white hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Karya</a>
+                <a href="#keahlian" class="text-slate-300 hover:text-white hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Keahlian</a>
+                <a href="#kontak" class="text-primary hover:text-blue-400 block px-3 py-2 rounded-md text-base font-medium mt-4">Hubungi Saya</a>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5" style="background-color: #0f172a;">
-        <div class="container py-5">
-            <div class="text-center mb-5">
-              <h2 class="display-5 fw-bold text-white mb-2" data-aos="zoom-in" data-aos-duration="1000">Contact Me</h2>
-              <p class="text-secondary">Punya ide proyek menarik? Yuk, bicarakan!</p>
+    <!-- Konten Utama -->
+    <main class="relative z-10 pt-20">
+        
+        <section id="beranda" class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-primary font-mono mb-4 text-sm md:text-base tracking-widest uppercase inline-block py-1 px-3 rounded-full border border-primary/30 bg-primary/10">Halo, saya</p>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight mb-6 text-white">
+                    Jane Doe<br>
+                    <span class="text-gradient">Desainer Web & Pengembang.</span>
+                </h1>
+                <p class="mt-4 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Saya membangun antarmuka digital yang estetis, responsif, dan intuitif. Menggabungkan desain modern dengan teknologi masa depan untuk pengalaman pengguna yang tak terlupakan.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#karya" class="w-full sm:w-auto px-8 py-4 border border-transparent text-base font-medium rounded-full text-white bg-primary hover:bg-blue-600 transition-all shadow-[0_0_20px_rgba(14,165,233,0.4)] flex items-center justify-center">
+                        Lihat Karya Saya
+                        <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="w-full sm:w-auto px-8 py-4 border border-slate-700 text-base font-medium rounded-full text-slate-300 hover:bg-slate-800 hover:text-white transition-all flex items-center justify-center">
+                        <i data-lucide="github" class="mr-2 h-5 w-5"></i>
+                        GitHub
+                    </a>
+                </div>
             </div>
             
-            <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
-              <div class="col-12 col-md-8 col-lg-6">
-                <div class="p-4 p-sm-5 rounded-4 shadow" style="background: #1e293b; border: 1px solid rgba(255, 255, 255, 0.05);">
-                  <div class="myalert alert alert-success alert-dismissible fade show d-none border-0" role="alert" style="background-color: rgba(34, 197, 94, 0.2); color: #4ade80;">
-                    <i class="bi bi-check-circle-fill me-2"></i><strong>Terima Kasih!</strong> Pesan Anda berhasil dikirim.
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="alert" aria-label="Close"></button>
-                  </div>
-                  
-                  <form name="contact-form">
-                    <div class="mb-4">
-                      <label for="name" class="form-label text-secondary small fw-semibold">Nama Lengkap</label>
-                      <input type="text" class="form-control px-3 py-2 bg-dark border-0 text-white rounded-3 focus-ring" id="name" placeholder="Masukkan nama lengkap Anda" name="nama" required style="--bs-focus-ring-color: rgba(59, 130, 246, 0.5);"/>
+            <!-- Indikator Scroll -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center text-slate-500">
+                <span class="text-xs mb-2 uppercase tracking-widest">Gulir</span>
+                <i data-lucide="mouse" class="h-5 w-5"></i>
+            </div>
+        </section>
+
+        <section id="tentang" class="py-24 bg-dark/50 relative border-t border-slate-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                    <div class="mb-12 lg:mb-0 relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-primary to-secondary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                        <img src="https://placehold.co/800x1000/0f172a/0ea5e9?text=Foto+Profil" alt="Jane Doe" class="relative rounded-2xl w-full h-auto object-cover border border-slate-800 shadow-2xl grayscale group-hover:grayscale-0 transition-all duration-500">
                     </div>
-                    <div class="mb-4">
-                      <label for="email" class="form-label text-secondary small fw-semibold">Email</label>
-                      <input type="email" class="form-control px-3 py-2 bg-dark border-0 text-white rounded-3 focus-ring" id="email" placeholder="nama@email.com" name="email" required style="--bs-focus-ring-color: rgba(59, 130, 246, 0.5);"/>
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Mengenal Saya</h2>
+                        <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mb-8 rounded-full"></div>
+                        <p class="text-lg text-slate-300 mb-6 leading-relaxed">
+                            Saya adalah seorang pengembang front-end dan desainer UI/UX yang bersemangat tentang menciptakan pengalaman web yang menarik secara visual dan sangat fungsional.
+                        </p>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            Dengan pengalaman lebih dari 5 tahun di industri kreatif digital, saya telah bekerja dengan berbagai klien untuk mengubah ide kompleks menjadi antarmuka yang bersih dan ramah pengguna. Pendekatan saya selalu berpusat pada pengguna, menggabungkan prinsip desain estetika dengan kode yang bersih dan efisien.
+                        </p>
+                        
+                        <div class="grid grid-cols-2 gap-6 border-t border-slate-800 pt-8">
+                            <div>
+                                <h3 class="text-white font-semibold text-xl mb-1">20+</h3>
+                                <p class="text-sm text-slate-500">Proyek Selesai</p>
+                            </div>
+                            <div>
+                                <h3 class="text-white font-semibold text-xl mb-1">5 Tahun</h3>
+                                <p class="text-sm text-slate-500">Pengalaman</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-4">
-                      <label for="pesan" class="form-label text-secondary small fw-semibold">Pesan Anda</label>
-                      <textarea class="form-control px-3 py-2 bg-dark border-0 text-white rounded-3 focus-ring" id="pesan" rows="4" placeholder="Tuliskan pesan Anda di sini..." name="pesan" required style="--bs-focus-ring-color: rgba(59, 130, 246, 0.5);"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100 py-2.5 rounded-3 fw-bold btn-kirim" style="background: linear-gradient(45deg, #3b82f6, #8b5cf6); border: none;">Kirim Pesan</button>
-                    
-                    <button class="btn btn-primary w-100 py-2.5 rounded-3 fw-bold btn-load d-none" type="button" disabled style="background: linear-gradient(45deg, #3b82f6, #8b5cf6); border: none;">
-                      <span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>Loading...
-                    </button>
-                  </form>
                 </div>
-              </div>
             </div>
-        </div>
-    </section>
-    <!-- Contact end -->
+        </section>
 
+        <section id="karya" class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Karya Pilihan</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6 rounded-full"></div>
+                    <p class="text-slate-400 max-w-2xl mx-auto">Beberapa proyek terbaru yang menunjukkan kemampuan saya dalam merancang dan membangun aplikasi web modern.</p>
+                </div>
 
-    <!-- Footer -->
-    <footer class="py-4" style="background-color: #0b111e; border-top: 1px solid rgba(255, 255, 255, 0.05);">
-        <div class="container text-center">
-            <div class="d-flex justify-content-center gap-4 mb-3">
-              <a href="https://www.instagram.com/sqorpioo_?igsh=dW4yeTNxaXgxZXRt" class="text-secondary fs-4 hover-light"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/muh-rifai27-undefined-3847352b4/" class="text-secondary fs-4 hover-light"><i class="bi bi-linkedin"></i></a>
-              <a href="https://github.com/RFI21" class="text-secondary fs-4 hover-light"><i class="bi bi-github"></i></a>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Proyek 1 -->
+                    <div class="group relative rounded-2xl overflow-hidden glass-panel border border-slate-800 transition-all hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(14,165,233,0.3)]">
+                        <div class="aspect-w-16 aspect-h-10 overflow-hidden bg-slate-900">
+                            <img src="https://placehold.co/600x400/1e293b/0ea5e9?text=E-Commerce+Dashboard" alt="Proyek 1" class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex gap-2 mb-3">
+                                <span class="px-2 py-1 text-xs font-mono text-primary bg-primary/10 rounded border border-primary/20">React</span>
+                                <span class="px-2 py-1 text-xs font-mono text-secondary bg-secondary/10 rounded border border-secondary/20">Tailwind</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Dashboard E-Commerce</h3>
+                            <p class="text-slate-400 text-sm mb-4 line-clamp-2">Sistem manajemen dasbor komprehensif untuk toko online dengan analitik real-time dan manajemen inventaris.</p>
+                            <a href="#" class="inline-flex items-center text-primary hover:text-white transition-colors text-sm font-medium">
+                                Lihat Detail <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyek 2 -->
+                    <div class="group relative rounded-2xl overflow-hidden glass-panel border border-slate-800 transition-all hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(139,92,246,0.3)]">
+                        <div class="aspect-w-16 aspect-h-10 overflow-hidden bg-slate-900">
+                            <img src="https://placehold.co/600x400/1e293b/8b5cf6?text=Aplikasi+Finansial" alt="Proyek 2" class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex gap-2 mb-3">
+                                <span class="px-2 py-1 text-xs font-mono text-primary bg-primary/10 rounded border border-primary/20">Vue.js</span>
+                                <span class="px-2 py-1 text-xs font-mono text-pink-400 bg-pink-400/10 rounded border border-pink-400/20">Figma</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Aplikasi FinTech Mobile</h3>
+                            <p class="text-slate-400 text-sm mb-4 line-clamp-2">Desain antarmuka dan implementasi front-end untuk aplikasi pelacakan pengeluaran dan investasi pribadi.</p>
+                            <a href="#" class="inline-flex items-center text-secondary hover:text-white transition-colors text-sm font-medium">
+                                Lihat Detail <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Proyek 3 -->
+                    <div class="group relative rounded-2xl overflow-hidden glass-panel border border-slate-800 transition-all hover:-translate-y-2 hover:shadow-[0_10px_40px_-10px_rgba(236,72,153,0.3)]">
+                        <div class="aspect-w-16 aspect-h-10 overflow-hidden bg-slate-900">
+                            <img src="https://placehold.co/600x400/1e293b/ec4899?text=AI+Platform+UI" alt="Proyek 3" class="object-cover w-full h-full group-hover:scale-110 transition-transform duration-700 opacity-80 group-hover:opacity-100">
+                        </div>
+                        <div class="p-6">
+                            <div class="flex gap-2 mb-3">
+                                <span class="px-2 py-1 text-xs font-mono text-white bg-slate-700 rounded border border-slate-600">Next.js</span>
+                                <span class="px-2 py-1 text-xs font-mono text-secondary bg-secondary/10 rounded border border-secondary/20">Three.js</span>
+                            </div>
+                            <h3 class="text-xl font-semibold text-white mb-2">Antarmuka Platform AI</h3>
+                            <p class="text-slate-400 text-sm mb-4 line-clamp-2">Landing page interaktif untuk layanan AI baru, menampilkan elemen 3D dan animasi gulir yang mulus.</p>
+                            <a href="#" class="inline-flex items-center text-pink-400 hover:text-white transition-colors text-sm font-medium">
+                                Lihat Detail <i data-lucide="arrow-up-right" class="ml-1 h-4 w-4"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-slate-700 hover:border-primary text-base font-medium rounded-full text-white hover:text-primary transition-all">
+                        Lihat Semua Proyek di GitHub
+                    </a>
+                </div>
             </div>
-            <p class="text-secondary small m-0">&copy; 2024 Muh Rifai. Built with Passion & Bootstrap.</p>
+        </section>
+
+        <section id="keahlian" class="py-24 bg-dark/30 border-t border-b border-slate-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-2">Kotak Peralatan</h2>
+                    <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6 rounded-full"></div>
+                    <p class="text-slate-400 max-w-2xl mx-auto">Teknologi dan alat utama yang saya gunakan sehari-hari untuk menghidupkan ide.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <!-- Iterasi untuk keahlian -->
+                    <div class="glass-panel p-6 rounded-xl border border-slate-800 flex flex-col items-center justify-center gap-4 hover:border-primary/50 hover:bg-slate-800/50 transition-colors group">
+                        <i data-lucide="file-code-2" class="h-10 w-10 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        <span class="text-sm font-medium text-slate-300">HTML/CSS</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl border border-slate-800 flex flex-col items-center justify-center gap-4 hover:border-yellow-400/50 hover:bg-slate-800/50 transition-colors group">
+                        <i data-lucide="file-json" class="h-10 w-10 text-slate-400 group-hover:text-yellow-400 transition-colors"></i>
+                        <span class="text-sm font-medium text-slate-300">JavaScript</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl border border-slate-800 flex flex-col items-center justify-center gap-4 hover:border-primary/50 hover:bg-slate-800/50 transition-colors group">
+                        <i data-lucide="atom" class="h-10 w-10 text-slate-400 group-hover:text-primary transition-colors"></i>
+                        <span class="text-sm font-medium text-slate-300">React.js</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl border border-slate-800 flex flex-col items-center justify-center gap-4 hover:border-secondary/50 hover:bg-slate-800/50 transition-colors group">
+                        <i data-lucide="wind" class="h-10 w-10 text-slate-400 group-hover:text-secondary transition-colors"></i>
+                        <span class="text-sm font-medium text-slate-300">Tailwind</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl border border-slate-800 flex flex-col items-center justify-center gap-4 hover:border-pink-400/50 hover:bg-slate-800/50 transition-colors group">
+                        <i data-lucide="figma" class="h-10 w-10 text-slate-400 group-hover:text-pink-400 transition-colors"></i>
+                        <span class="text-sm font-medium text-slate-300">Figma</span>
+                    </div>
+                    <div class="glass-panel p-6 rounded-xl border border-slate-800 flex flex-col items-center justify-center gap-4 hover:border-white/50 hover:bg-slate-800/50 transition-colors group">
+                        <i data-lucide="github" class="h-10 w-10 text-slate-400 group-hover:text-white transition-colors"></i>
+                        <span class="text-sm font-medium text-slate-300">Git/GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="py-24 relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-panel rounded-3xl p-8 md:p-12 border border-slate-800 relative overflow-hidden">
+                    <!-- Efek cahaya di dalam kotak -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+                    
+                    <div class="relative z-10 md:flex md:gap-12">
+                        <div class="md:w-1/2 mb-10 md:mb-0">
+                            <h2 class="text-3xl font-bold text-white mb-4">Mari Berdiskusi</h2>
+                            <p class="text-slate-400 mb-8">Tertarik untuk bekerja sama atau memiliki pertanyaan? Jangan ragu untuk mengirim pesan. Saya akan berusaha membalas secepatnya.</p>
+                            
+                            <div class="space-y-4">
+                                <a href="mailto:hello@example.com" class="flex items-center text-slate-300 hover:text-primary transition-colors">
+                                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center mr-4">
+                                        <i data-lucide="mail" class="h-5 w-5"></i>
+                                    </div>
+                                    hello@janedoe.com
+                                </a>
+                                <div class="flex items-center text-slate-300">
+                                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center mr-4">
+                                        <i data-lucide="map-pin" class="h-5 w-5"></i>
+                                    </div>
+                                    Jakarta, Indonesia
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2">
+                            <form class="space-y-4" onsubmit="event.preventDefault(); showMessage();">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-slate-400 mb-1">Nama</label>
+                                    <input type="text" id="name" class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Nama Anda" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-slate-400 mb-1">Email</label>
+                                    <input type="email" id="email" class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="email@anda.com" required>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-slate-400 mb-1">Pesan</label>
+                                    <textarea id="message" rows="4" class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                                </div>
+                                <button type="submit" class="w-full px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-gradient-to-r from-primary to-secondary hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-darker transition-all shadow-lg">
+                                    Kirim Pesan
+                                </button>
+                            </form>
+                            
+                            <!-- Pesan Sukses Tersembunyi -->
+                            <div id="success-msg" class="hidden mt-4 p-4 rounded-lg bg-green-500/10 border border-green-500/20 text-green-400 text-sm text-center">
+                                Terima kasih! Pesan Anda telah terkirim (Simulasi).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-darker border-t border-slate-800 py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-4 md:mb-0">
+                <a href="#" class="text-xl font-bold font-mono">
+                    <span class="text-primary">&lt;</span>Jane<span class="text-secondary">/&gt;</span>
+                </a>
+            </div>
+            <div class="text-slate-500 text-sm">
+                &copy; 2026 Jane Doe. Hak cipta dilindungi.
+            </div>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="text-slate-500 hover:text-white transition-colors">
+                    <span class="sr-only">Twitter</span>
+                    <i data-lucide="twitter" class="h-5 w-5"></i>
+                </a>
+                <a href="#" class="text-slate-500 hover:text-white transition-colors">
+                    <span class="sr-only">LinkedIn</span>
+                    <i data-lucide="linkedin" class="h-5 w-5"></i>
+                </a>
+                <a href="#" class="text-slate-500 hover:text-white transition-colors">
+                    <span class="sr-only">GitHub</span>
+                    <i data-lucide="github" class="h-5 w-5"></i>
+                </a>
+            </div>
         </div>
     </footer>
-    <!-- Footer end -->
 
-
-    <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- JS AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init({ once: true });</script>
-    <!-- JS GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
     <script>
-      gsap.registerPlugin(TextPlugin);
-      const tl = gsap.timeline({repeat:-1, repeatDelay:1.5, yoyo:true});
-      tl.from(".myheadline", {duration: 2, text:""});
-      gsap.from('.display-3', { duration: 1.2, y: 50, opacity: 0, ease: 'power4.out'});
-    </script>
+        // Inisialisasi ikon Lucide
+        lucide.createIcons();
 
-    <!-- Contact Form Handler -->
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzS2aDpw8OUWc8VdJZOKOdZUtzBqNebNOTI4bVQlVRDAFQNjBUbSnan5UepIzAWq8uL/exec'
-      const form = document.forms['contact-form']
-      const btnKirim = document.querySelector('.btn-kirim')
-      const btnLoad = document.querySelector('.btn-load')
-      const myalert = document.querySelector('.myalert')
-       
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        btnKirim.classList.toggle('d-none')
-        btnLoad.classList.toggle('d-none')
-          
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            btnKirim.classList.toggle('d-none')
-            btnLoad.classList.toggle('d-none')
-            myalert.classList.toggle('d-none')
-            form.reset()
-            console.log('Success!', response)
-        })
-        .catch(error => console.error('Error!', error.message))
-      })
+        // Logika menu mobile
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Tutup menu mobile saat tautan diklik
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Efek blur/transparan navbar saat digulir
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('bg-dark/80');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.add('bg-transparent');
+                navbar.classList.remove('bg-dark/80');
+            }
+        });
+
+        // Fungsi simulasi kirim formulir (menggantikan alert)
+        function showMessage() {
+            const form = document.querySelector('form');
+            const msg = document.getElementById('success-msg');
+            const btn = form.querySelector('button[type="submit"]');
+            
+            // Ubah teks tombol
+            const originalText = btn.innerText;
+            btn.innerText = 'Mengirim...';
+            btn.disabled = true;
+            btn.classList.add('opacity-70', 'cursor-not-allowed');
+
+            // Simulasi proses jaringan
+            setTimeout(() => {
+                form.reset();
+                btn.innerText = originalText;
+                btn.disabled = false;
+                btn.classList.remove('opacity-70', 'cursor-not-allowed');
+                
+                // Tampilkan pesan
+                msg.classList.remove('hidden');
+                
+                // Sembunyikan pesan setelah 5 detik
+                setTimeout(() => {
+                    msg.classList.add('hidden');
+                }, 5000);
+            }, 1000);
+        }
     </script>
-  </body>
+</body>
 </html>
