@@ -236,7 +236,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
                 </div>
                 
                 <div class="mt-12 text-center">
-                    <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-slate-700 hover:border-primary text-base font-medium rounded-full text-white hover:text-primary transition-all">
+                    <a href="https://github.com/RFI21" class="inline-flex items-center justify-center px-6 py-3 border border-slate-700 hover:border-primary text-base font-medium rounded-full text-white hover:text-primary transition-all">
                         Lihat Semua Proyek di GitHub
                     </a>
                 </div>
@@ -281,62 +281,56 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             </div>
         </section>
 
-        <section id="kontak" class="py-24 relative">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="glass-panel rounded-3xl p-8 md:p-12 border border-slate-800 relative overflow-hidden">
-                    <!-- Efek cahaya di dalam kotak -->
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
-                    <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
-                    
-                    <div class="relative z-10 md:flex md:gap-12">
-                        <div class="md:w-1/2 mb-10 md:mb-0">
-                            <h2 class="text-3xl font-bold text-white mb-4">Mari Berdiskusi</h2>
-                            <p class="text-slate-400 mb-8">Tertarik untuk bekerja sama atau memiliki pertanyaan? Jangan ragu untuk mengirim pesan. Saya akan berusaha membalas secepatnya.</p>
-                            
-                            <div class="space-y-4">
-                                <a href="mailto:hello@example.com" class="flex items-center text-slate-300 hover:text-primary transition-colors">
-                                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center mr-4">
-                                        <i data-lucide="mail" class="h-5 w-5"></i>
-                                    </div>
-                                    hello@janedoe.com
-                                </a>
-                                <div class="flex items-center text-slate-300">
-                                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center mr-4">
-                                        <i data-lucide="map-pin" class="h-5 w-5"></i>
-                                    </div>
-                                    Jakarta, Indonesia
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="md:w-1/2">
-                            <form class="space-y-4" onsubmit="event.preventDefault(); showMessage();">
-                                <div>
-                                    <label for="name" class="block text-sm font-medium text-slate-400 mb-1">Nama</label>
-                                    <input type="text" id="name" class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Nama Anda" required>
-                                </div>
-                                <div>
-                                    <label for="email" class="block text-sm font-medium text-slate-400 mb-1">Email</label>
-                                    <input type="email" id="email" class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="email@anda.com" required>
-                                </div>
-                                <div>
-                                    <label for="message" class="block text-sm font-medium text-slate-400 mb-1">Pesan</label>
-                                    <textarea id="message" rows="4" class="w-full bg-slate-900/50 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" placeholder="Tulis pesan Anda di sini..." required></textarea>
-                                </div>
-                                <button type="submit" class="w-full px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-gradient-to-r from-primary to-secondary hover:from-blue-600 hover:to-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-darker transition-all shadow-lg">
-                                    Kirim Pesan
-                                </button>
-                            </form>
-                            
-                            <!-- Pesan Sukses Tersembunyi -->
-                            <div id="success-msg" class="hidden mt-4 p-4 rounded-lg bg-green-500/10 border border-green-500/20 text-green-400 text-sm text-center">
-                                Terima kasih! Pesan Anda telah terkirim (Simulasi).
-                            </div>
-                        </div>
-                    </div>
+<section id="kontak" class="py-24 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="glass-panel rounded-3xl p-10 border border-slate-800 relative overflow-hidden text-center">
+            
+            <!-- Efek blur -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="relative z-10">
+                
+                <h2 class="text-4xl font-bold text-white mb-4">
+                    Hubungi
+                </h2>
+
+                <p class="text-slate-400 mb-10">
+                    Terhubung dengan saya melalui media sosial berikut
+                </p>
+
+                <div class="flex items-center justify-center gap-6">
+
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/"
+                       target="_blank"
+                       class="w-14 h-14 rounded-full border border-slate-700 flex items-center justify-center text-white hover:bg-pink-500 hover:border-pink-500 transition-all duration-300">
+
+                        <i data-lucide="instagram" class="w-6 h-6"></i>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/"
+                       target="_blank"
+                       class="w-14 h-14 rounded-full border border-slate-700 flex items-center justify-center text-white hover:bg-blue-600 hover:border-blue-600 transition-all duration-300">
+
+                        <i data-lucide="linkedin" class="w-6 h-6"></i>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/RFI21"
+                       target="_blank"
+                       class="w-14 h-14 rounded-full border border-slate-700 flex items-center justify-center text-white hover:bg-slate-700 hover:border-slate-600 transition-all duration-300">
+
+                        <i data-lucide="github" class="w-6 h-6"></i>
+                    </a>
+
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
     </main>
 
@@ -344,11 +338,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
             <div class="mb-4 md:mb-0">
                 <a href="#" class="text-xl font-bold font-mono">
-                    <span class="text-primary">&lt;</span>Jane<span class="text-secondary">/&gt;</span>
+                    <span class="text-primary">&lt;</span>Rifai<span class="text-secondary">/&gt;</span>
                 </a>
             </div>
             <div class="text-slate-500 text-sm">
-                &copy; 2026 Jane Doe. Hak cipta dilindungi.
+                &copy; 2026 Muh Rifai. Hak cipta dilindungi.
             </div>
             <div class="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" class="text-slate-500 hover:text-white transition-colors">
